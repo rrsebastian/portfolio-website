@@ -1,6 +1,6 @@
 # My Portfolio website!
 
-Live Website - sebastiantportfolio.netlify.app
+Live Website - https://sebastiantportfolio.netlify.app/
 
 Built with:
 
