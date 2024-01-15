@@ -1,9 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/Navbar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar({ handleClick, showMobileMenu, setShowMobileMenu }) {
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  console.log(windowSize);
+
+  const handleResize = () => {
+    setWindowSize(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="navbar-container">
       <h1>Sebastian Torkowski</h1>
@@ -14,7 +30,7 @@ function Navbar({ handleClick, showMobileMenu, setShowMobileMenu }) {
       <ul
         style={{
           right: showMobileMenu && "0px",
-          display: showMobileMenu && "initial",
+          display: windowSize > 1280 ? "flex" : "initial",
         }}
       >
         <li>
