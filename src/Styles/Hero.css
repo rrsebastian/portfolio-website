@@ -1,0 +1,126 @@
+.hero-container {
+  min-height: 75vh;
+  margin: 0px 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 130px;
+}
+
+.hero-profile-pic {
+  width: 360px;
+  border-radius: 100%;
+  transition: all 0.8s ease-out;
+}
+
+.hero-profile-pic:hover {
+  transform: rotateY(180deg) rotate(180deg);
+  transition: transform 0.8s ease;
+}
+
+.hero-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-info-wrapper p {
+  font-weight: 600;
+  color: rgb(85, 85, 85);
+}
+
+.hero-info-wrapper h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(85, 85, 85);
+}
+
+.hero-button-wrapper,
+.hero-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.hero-button-wrapper button {
+  padding: 12px 19px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.35s ease-out;
+}
+
+.hero-cv-btn {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.hero-contact-btn {
+  background-color: rgb(53, 53, 53);
+  border: 1px solid rgb(53, 53, 53);
+  color: white;
+}
+
+.hero-cv-btn:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  transition: all, 0.35s ease;
+}
+
+.hero-contact-btn:hover {
+  background-color: black;
+  transition: all 0.35s ease;
+}
+
+.linkedin-icon,
+.github-icon {
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.linkedin-icon:hover,
+.github-icon:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1280px) {
+  .hero-container {
+    flex-direction: column;
+    margin: 0px;
+    margin-top: 50px;
+    margin-bottom: 130px;
+    gap: 30px;
+  }
+
+  .hero-profile-pic {
+    width: 280px;
+  }
+}
+
+@media (max-width: 790px) {
+  .hero-info-wrapper {
+    text-align: center;
+  }
+
+  .hero-info-wrapper h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 490px) {
+  .hero-info-wrapper h2 {
+    font-size: 30px;
+  }
+
+  .hero-info-wrapper h3 {
+    font-size: 25px;
+  }
+}
