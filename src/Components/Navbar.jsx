@@ -30,6 +30,7 @@ function Navbar({ handleClick, showMobileMenu, setShowMobileMenu }) {
       <ul
         style={{
           right: showMobileMenu && "0px",
+          visibility: showMobileMenu ? "visible" : "hidden",
           display: windowSize > 1280 ? "flex" : "initial",
         }}
       >

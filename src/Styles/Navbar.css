@@ -44,8 +44,8 @@
   .navbar-container ul {
     position: absolute;
     display: initial;
+    right: 0px;
     top: 15%;
-    right: -5000px;
     text-align: left;
     width: 100%;
     background-color: white;
