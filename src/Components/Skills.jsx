@@ -32,7 +32,7 @@ function Skills() {
             <div>
               <Skill skill="React JS" extraInfo="Experienced" />
               <Skill skill="TypeScript" extraInfo="Basics" />
-              <Skill skill="Git" extraInfo="Intermediate" />
+              <Skill skill="Git" extraInfo="Basics" />
               <Skill skill="APIs" extraInfo="Intermediate" />
             </div>
           </div>
