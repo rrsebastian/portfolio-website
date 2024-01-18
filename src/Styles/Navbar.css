@@ -34,10 +34,14 @@
   transform: translateY(10px);
 }
 
-.hamburger-icon {
+.menu-btn {
   font-size: 35px;
   display: none;
   cursor: pointer;
+}
+
+.close-icon {
+  font-size: 50px;
 }
 
 @media (max-width: 1280px) {
@@ -53,6 +57,11 @@
     z-index: 5;
   }
 
+  .navbar-container button {
+    background-color: transparent;
+    border: none;
+  }
+
   .navbar-container li {
     padding: 10px 0px;
     margin-left: 160px;
@@ -60,7 +69,7 @@
     margin-bottom: 5px;
   }
 
-  .hamburger-icon {
+  .menu-btn {
     display: initial;
   }
 }

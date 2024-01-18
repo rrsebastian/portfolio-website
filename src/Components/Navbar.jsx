@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../Styles/Navbar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoIosClose } from "react-icons/io";
 
 function Navbar({ handleClick, showMobileMenu, setShowMobileMenu }) {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
@@ -21,10 +22,17 @@ function Navbar({ handleClick, showMobileMenu, setShowMobileMenu }) {
   return (
     <header className="navbar-container">
       <h1>Sebastian Torkowski</h1>
-      <GiHamburgerMenu
+      <button
         onClick={() => setShowMobileMenu(!showMobileMenu)}
-        className="hamburger-icon"
-      />
+        className="menu-btn"
+      >
+        {!showMobileMenu ? (
+          <GiHamburgerMenu className="hamburger-icon" />
+        ) : (
+          <IoIosClose className="close-icon" />
+        )}
+      </button>
+
       <nav
         style={{
           right: showMobileMenu && "0px",
