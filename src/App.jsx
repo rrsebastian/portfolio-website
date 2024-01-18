@@ -14,6 +14,8 @@ function App() {
     setShowMobileMenu(false);
   };
 
+  console.log(showMobileMenu);
+
   return (
     <div>
       <Navbar

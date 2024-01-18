@@ -51,7 +51,6 @@
     background-color: white;
     height: 270px;
     z-index: 5;
-    display: none;
   }
 
   .navbar-container li {
@@ -96,5 +95,11 @@
 
   .navbar-container li {
     margin-left: 30px;
+  }
+}
+
+@media (max-width: 485px) {
+  .navbar-container h1 {
+    max-width: 50%;
   }
 }

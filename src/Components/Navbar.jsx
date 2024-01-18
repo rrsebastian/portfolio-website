@@ -6,8 +6,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 function Navbar({ handleClick, showMobileMenu, setShowMobileMenu }) {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
-  console.log(windowSize);
-
   const handleResize = () => {
     setWindowSize(window.innerWidth);
   };
@@ -30,7 +28,8 @@ function Navbar({ handleClick, showMobileMenu, setShowMobileMenu }) {
       <ul
         style={{
           right: showMobileMenu && "0px",
-          visibility: showMobileMenu ? "visible" : "hidden",
+          visibility:
+            showMobileMenu || windowSize > 1280 ? "visible" : "hidden",
           display: windowSize > 1280 ? "flex" : "initial",
         }}
       >
