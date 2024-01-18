@@ -19,13 +19,13 @@ function Navbar({ handleClick, showMobileMenu, setShowMobileMenu }) {
   }, []);
 
   return (
-    <div className="navbar-container">
+    <header className="navbar-container">
       <h1>Sebastian Torkowski</h1>
       <GiHamburgerMenu
         onClick={() => setShowMobileMenu(!showMobileMenu)}
         className="hamburger-icon"
       />
-      <ul
+      <nav
         style={{
           right: showMobileMenu && "0px",
           visibility:
@@ -77,8 +77,8 @@ function Navbar({ handleClick, showMobileMenu, setShowMobileMenu }) {
             Contact
           </Link>
         </li>
-      </ul>
-    </div>
+      </nav>
+    </header>
   );
 }
 
