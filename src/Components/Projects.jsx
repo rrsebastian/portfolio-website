@@ -3,7 +3,7 @@ import Project from "./Project";
 import "../Styles/Projects.css";
 import CryptoImg from "../assets/CryptoWebsite.png";
 import RestaurantImg from "../assets/Restaurant.png";
-import WeatherImg from "../assets/WeatherApp.png";
+import LandingImg from "../assets/Landing.png";
 
 function Projects() {
   return (
@@ -24,10 +24,10 @@ function Projects() {
           websiteLink="https://elicieux.netlify.app/"
         />
         <Project
-          img={WeatherImg}
-          projectName="Weather App"
-          githubLink="https://github.com/rrsebastian/weather-app"
-          websiteLink=" https://liveweathertoday.netlify.app/"
+          img={LandingImg}
+          projectName="Landing Page"
+          githubLink="https://github.com/rrsebastian/landing-page"
+          websiteLink="https://web-array-test.netlify.app/"
         />
       </div>
     </div>
