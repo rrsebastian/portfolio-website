@@ -1,6 +1,5 @@
 import React from "react";
 import "../Styles/Hero.css";
-import ProfilePic from "../assets/luffy.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Cv from "../assets/CV.pdf";
@@ -9,9 +8,6 @@ import { Link } from "react-scroll";
 function Hero({ handleClick }) {
   return (
     <div className="hero-container">
-      <div>
-        <img className="hero-profile-pic" src={ProfilePic} />
-      </div>
       <div className="hero-info-wrapper">
         <p>Hello I'm</p>
         <h2>Sebastian Torkowski</h2>
