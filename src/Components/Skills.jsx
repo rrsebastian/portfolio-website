@@ -12,12 +12,10 @@ function Skills() {
           <h3>How i learnt these Skills</h3>
           <div>
             I have honed my skills through dedicated courses, YouTube, and
-            extensive research. Currently immersed in the ongoing learning
-            process of TypeScript, I have already gained a good understanding of
-            its principles. With strategic plans in place, I aim to continually
-            enhance my expertise. My goal is to explore additional libraries and
-            frameworks, aspiring to evolve into a more proficient and efficient
-            developer.
+            extensive research. With strategic plans in place, I aim to
+            continually enhance my expertise. My goal is to explore additional
+            libraries and frameworks, aspiring to evolve into a more proficient
+            and efficient developer.
           </div>
         </div>
         <div className="right-skills-container">
@@ -31,7 +29,7 @@ function Skills() {
             </div>
             <div>
               <Skill skill="React JS" extraInfo="Experienced" />
-              <Skill skill="TypeScript" extraInfo="Basics" />
+              <Skill skill="Tailwind CSS" extraInfo="Intermediate" />
               <Skill skill="Git" extraInfo="Basics" />
               <Skill skill="APIs" extraInfo="Intermediate" />
             </div>

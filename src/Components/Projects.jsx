@@ -2,7 +2,7 @@ import React from "react";
 import Project from "./Project";
 import "../Styles/Projects.css";
 import CryptoImg from "../assets/CryptoWebsite.png";
-import RestaurantImg from "../assets/Restaurant.png";
+import TwitterImg from "../assets/Twitter.png";
 import LandingImg from "../assets/Landing.png";
 
 function Projects() {
@@ -18,10 +18,10 @@ function Projects() {
           websiteLink="https://evobit.netlify.app/"
         />
         <Project
-          img={RestaurantImg}
-          projectName="Restaurant Website"
-          githubLink="https://github.com/rrsebastian/restaurant-website"
-          websiteLink="https://elicieux.netlify.app/"
+          img={TwitterImg}
+          projectName="Twitter Clone"
+          githubLink="https://github.com/rrsebastian/twitter-clone"
+          websiteLink="https://twitter-clone-sebastian.netlify.app/"
         />
         <Project
           img={LandingImg}
